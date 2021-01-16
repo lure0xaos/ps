@@ -1,0 +1,51 @@
+h1 {
+    text-align : center;
+    font-size  : larger;
+}
+
+h1 small {
+    font-size : small;
+    color     : gray;
+}
+
+h2 {
+    text-align : center;
+    font-size  : medium;
+}
+
+ul {
+    list-style   : none;
+    margin-left  : 0;
+    padding-left : 0;
+}
+
+ul li {
+    padding-left : 1em;
+    text-indent  : -1em;
+}
+
+ul li:before {
+    padding-right : 5px;
+    font-size     : small;
+    font-weight   : bold;
+}
+
+ul li[rel=new]:before {
+    content : "+";
+    color   : gray;
+}
+
+ul li[rel=change]:before {
+    content : "*";
+    color   : gray;
+}
+
+ul li[rel=bugfix]:before {
+    content : "!";
+    color   : gray;
+}
+
+ul li[rel=removed]:before {
+    content : "-";
+    color   : gray;
+}
